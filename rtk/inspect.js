@@ -6,8 +6,9 @@
 // 3. Report trigger is recorded as "API"
 // 4. A valid native stack is present in the report
 // 5. Javascript heap section is present
-// 6. run: rtk inspect <generated report>
-// 7. Observe the output
+// 6. install the npm package: report-toolkit: npm i -g report-toolkit
+// 7. run: rtk inspect <generated report>
+// 8. Observe the output
 
 
 // Define a custom type
