@@ -12,19 +12,19 @@
 
 // Define a custom type
 function Type() {
-  this.name = 'foo'
-  this.id = 128
+  this.name = 'foo';
+  this.id = 128;
   this.account = 9845432470
 }
 
 // A global array, only to leak memory
-const l = []
+const l = [];
 
 // Create half a million objects and fill those into the array
 for (var i = 0; i < 500000; i++) {
-  const r = new Type()
+  const r = new Type();
   l.push(r)
 }
 
 // Generate a report
-process.report.writeReport()
+process.report.writeReport();

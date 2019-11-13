@@ -7,17 +7,17 @@
 // 4. In libuv section of the report, make sure there are sections for
 //    i) fs_poll ii) fs_event that map to the file being watched.
 
-const f = require('fs')
-let w
+const f = require('fs');
+let w;
 try {
-  w = f.watch(__filename)
+  w = f.watch(__filename);
 } catch {
 }
 
-f.watchFile(__filename, () => {})
+f.watchFile(__filename, () => {});
 
 setInterval(() => {
-  process.report.writeReport()
-  if (w) w.close()
-  process.exit(0)
-}, 1000)
+  process.report.writeReport();
+  if (w) w.close();
+  process.exit(0);
+}, 1000);

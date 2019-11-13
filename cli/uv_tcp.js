@@ -11,14 +11,14 @@
 //    the client's port as the remote port
 
 
-const h = require('http')
+const h = require('http');
 const s = h.createServer((q, r) => {
   q.on('end', () => {
-    process.report.writeReport()
+    process.report.writeReport();
     process.exit(0)
-  })
-  q.resume()
-})
+  });
+  q.resume();
+});
 s.listen(12000, () => {
-  h.get({ port: 12000 })
-})
+  h.get({ port: 12000 });
+});

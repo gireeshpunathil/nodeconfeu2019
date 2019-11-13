@@ -2,5 +2,5 @@
 // RUN: node --experimental-report filename.js
 // CHECK: The report is generated wth the specified filename
 
-process.report.filename = 'myreport.json'
-process.report.writeReport()
+process.report.filename = 'myreport.json';
+process.report.writeReport();
