@@ -1,6 +1,6 @@
 // PURPOSE: Make use of report tool kit's redact functionality
 // RUN: USER=root PASSWORD=passwd node --experimental-report --report-on-signal redact.js
-// NOTICE: this doesn't yet work on windows
+// NOTICE: Signal based report generation is not supported in Windows. More info: https://nodejs.org/dist/latest-v13.x/docs/api/report.html
 // CHECK:
 // 1. A report is generated
 // 2. Report event is recorded as "SIGUSR2"

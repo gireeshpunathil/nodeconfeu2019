@@ -1,6 +1,6 @@
 // PURPOSE: simulate a signal reception
 // RUN: node --experimental-report --report-on-signal signal.js
-// NOTICE: this doesn't yet work on windows
+// NOTICE: Signal based report generation is not supported in Windows. More info: https://nodejs.org/dist/latest-v13.x/docs/api/report.html
 // CHECK:
 // 1. A report is generated
 // 2. Report event is recorded as "SIGUSR2"
