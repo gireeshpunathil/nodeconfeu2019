@@ -6,7 +6,7 @@
 // 3. Report trigger is recorded as "API"
 // 4. In libuv section of the report, make sure there are 3 sections
 //    for tcp, one for server socket (port: 12K), and one for the client
-//    socket with some arbitrary lcoal port and 12K as the remote port,
+//    socket with some arbitrary local port and 12K as the remote port,
 //    and one for the accepted server socket with 12K as local port and
 //    the client's port as the remote port
 
