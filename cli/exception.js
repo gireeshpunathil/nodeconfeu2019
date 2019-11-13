@@ -1,7 +1,7 @@
 // PURPOSE: simulate an uncaught exception
 // RUN: node --experimental-report --report-uncaught-exception exception.js
 // CHECK:
-// 1. An uncaught exception has occured (of type ERR_INVALID_PROTOCOL)
+// 1. An uncaught exception has occurred (of type ERR_INVALID_PROTOCOL)
 // 2. A report is generated on exception
 // 3. Report event is recorded as "Protocol hppt not supported. Expected http"
 // 4. Report trigger is recorded as "Exception"

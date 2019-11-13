@@ -1,7 +1,7 @@
 // PURPOSE: simulate a Javscript heap OOM
 // RUN: node --experimental-report --report-on-fatalerror --max-old-space-size=20 fatalerror.js
 // CHECK:
-// 1. An OOM has occured
+// 1. An OOM has occurred
 // 2. A report is generated on OOM
 // 3. Report event is recorded as "Allocation failed - JavaScript heap out of memory"
 // 4. Report trigger is recorded as "FatalError"
