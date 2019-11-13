@@ -1,5 +1,6 @@
 // PURPOSE: simulate a signal reception
 // RUN: node --experimental-report --report-on-signal signal.js
+// NOTICE: this doesn't yet work on windows
 // CHECK:
 // 1. A report is generated
 // 2. Report event is recorded as "SIGUSR2"

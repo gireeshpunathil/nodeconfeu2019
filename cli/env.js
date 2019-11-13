@@ -1,5 +1,7 @@
 // PURPOSE: examine a prevalent environment variable
-// RUN: FOO=BAR node --experimental-report --report-on-signal env.js
+// RUN Mac/Linux:   FOO=BAR node --experimental-report --report-on-signal env.js
+// RUN Windows:     set FOO=BAR&&node --experimental-report --report-on-signal env.js
+// NOTICE: this doesn't yet work on windows
 // CHECK:
 // 1. A report is generated
 // 2. Report event is recorded as "SIGUSR2"
