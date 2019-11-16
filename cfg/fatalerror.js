@@ -2,7 +2,7 @@
 // RUN: node --experimental-report --max-old-space-size=20 fatalerror.js
 // CHECK: The report is generated upon fatal error (OOM)
 
-process.report.reportOnFatalError = true
+process.report.reportOnFatalError = true;
 
 // emulate an Javascript heap OOM
 

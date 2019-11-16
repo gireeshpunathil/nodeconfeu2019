@@ -11,8 +11,8 @@
 // 8. Its value is close to 0 (total time spent in seconds in kernel space)
 
 // Tight loop for 10 seconds
-const start = Date.now()
+const start = Date.now();
 while (Date.now() - start < 10000);
 
 // and take a report
-process.report.writeReport()
+process.report.writeReport();

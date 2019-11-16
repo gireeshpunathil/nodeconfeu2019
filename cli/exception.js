@@ -8,7 +8,7 @@
 // 5. A valid Javastack with message is present in the report
 // 6. A valid native stack is present in the report
 
-const h = require('http')
+const h = require('http');
 h.createServer((q, r) => {
   r.end('hello!')
 }).listen(12000, ()=> {
@@ -17,4 +17,4 @@ h.createServer((q, r) => {
       console.log(d.toString())
     })
   })
-})
+});

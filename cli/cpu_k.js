@@ -12,9 +12,9 @@
 
 
 // Read node.exe a thousand times in a tight loop
-const f = require('fs')
+const f = require('fs');
 for (var i = 0; i < 1000; i++)
-  f.readFileSync(process.execPath)
+  f.readFileSync(process.execPath);
 
 // and take a report
-process.report.writeReport()
+process.report.writeReport();

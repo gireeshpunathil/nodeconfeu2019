@@ -12,7 +12,7 @@
 // 8. environment variable section is present
 
 // dummy sleep so that the program does not exit premature
-setTimeout(()=>{}, 1000)
+setTimeout(()=>{}, 1000);
 
 // Inject a signal.
-process.kill(process.pid, 'SIGUSR2')
+process.kill(process.pid, 'SIGUSR2');

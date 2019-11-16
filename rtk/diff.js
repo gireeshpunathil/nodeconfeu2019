@@ -10,21 +10,21 @@
 // Child sequence
 if (process.argv[2] === 'child') {
   // just write a report and exit
-  process.report.writeReport()
-  process.exit(0)
+  process.report.writeReport();
+  process.exit(0);
 } else {
 
 // Parent sequence
-  const spawn = require('child_process').spawn
-  const args = ['--experimental-report', __filename, 'child']
+  const spawn = require('child_process').spawn;
+  const args = ['--experimental-report', __filename, 'child'];
 
   // set an env called FOO with value X
-  process.env.FOO = 'X'
-  const c1 = spawn(process.execPath, args)
+  process.env.FOO = 'X';
+  const c1 = spawn(process.execPath, args);
 
   c1.on('exit', (code) => {
     // reset FOO with value Y
-    process.env.FOO = 'Y'
-    spawn(process.execPath, args)
+    process.env.FOO = 'Y';
+    spawn(process.execPath, args);
   })
 }

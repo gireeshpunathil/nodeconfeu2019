@@ -2,9 +2,9 @@
 // RUN: node --experimental-report exception.js
 // CHECK: The report is generated upon uncaught exception
 
-process.report.reportOnUncaughtException = true
+process.report.reportOnUncaughtException = true;
 
-const h = require('http')
+const h = require('http');
 h.createServer((q, r) => {
   r.end('hello!')
 }).listen(12000, ()=> {
@@ -13,4 +13,4 @@ h.createServer((q, r) => {
       console.log(d.toString())
     })
   })
-})
+});

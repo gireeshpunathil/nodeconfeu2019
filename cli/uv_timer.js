@@ -8,8 +8,8 @@
 //    for timer, one with timer expired and non-active, while the
 //    the other still active with some firesInMsFromNow less than 10K.
 
-setTimeout(() => {}, 10000)
+setTimeout(() => {}, 10000);
 setTimeout(() => {
-  process.report.writeReport()
-  process.exit(0)
-}, 1000)
+  process.report.writeReport();
+  process.exit(0);
+}, 1000);

@@ -9,14 +9,14 @@
 // 6. A valid native stack is present in the report
 // 7. Javascript heap memory section shows little or no available memory at least in the old_space
 
-const l = []
+const l = [];
 while (true) {
-  const r = new Type()
+  const r = new Type();
   l.push(r)
 }
 
 function Type() {
-  this.name = 'foo'
-  this.id = 128
-  this.account = 9845432470
+  this.name = 'foo';
+  this.id = 128;
+  this.account = 9845432470;
 }

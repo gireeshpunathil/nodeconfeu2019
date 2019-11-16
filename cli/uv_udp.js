@@ -7,12 +7,12 @@
 // 4. In libuv section of the report, make sure there are 2 sections
 //    for udp, one for the local and one for the remote endpoints.
 
-const d = require('dgram')
-const us = d.createSocket('udp4')
-const cus = d.createSocket('udp4')
+const d = require('dgram');
+const us = d.createSocket('udp4');
+const cus = d.createSocket('udp4');
 us.bind({}, () => {
   cus.connect(us.address().port, () => {
-    process.report.writeReport()
-    process.exit(0)
-  })
-})
+    process.report.writeReport();
+    process.exit(0);
+  });
+});
