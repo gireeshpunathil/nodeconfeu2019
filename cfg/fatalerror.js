@@ -4,7 +4,7 @@
 
 process.report.reportOnFatalError = true
 
-// emulate an Javascript heap OOM
+// emulate an JavaScript heap OOM
 
 const list = [];
 while (true) {

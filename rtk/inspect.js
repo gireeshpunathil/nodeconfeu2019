@@ -2,10 +2,10 @@
 // RUN: node --max-old-space-size=50 inspect.js
 // CHECK:
 // 1. A report is generated
-// 2. Report event is recorded as "Javascript API"
+// 2. Report event is recorded as "JavaScript API"
 // 3. Report trigger is recorded as "API"
 // 4. A valid native stack is present in the report
-// 5. Javascript heap section is present
+// 5. JavaScript heap section is present
 // 6. install the npm package: report-toolkit: npm i -g report-toolkit
 // 7. run: rtk inspect <generated report>
 // 8. Observe the output

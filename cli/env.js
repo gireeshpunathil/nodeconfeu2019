@@ -7,8 +7,8 @@
 // 2. Report event is recorded as "SIGUSR2"
 // 3. Report trigger is recorded as "Signal"
 // 4. A valid native stack is present in the report
-// 5. Javascript heap section is present
-// 6. resource usage section is present
+// 5. 'javascriptHeap' section is present
+// 6. 'resourceUsage' section is present
 // 7. libuv section is present
 // 8. environment variable section is present
 // 9. locate the env variable FOO, make sure its value is BAR

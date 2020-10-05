@@ -5,7 +5,7 @@
 // 2. A report is generated on exception
 // 3. Report event is recorded as "Protocol hppt not supported. Expected http"
 // 4. Report trigger is recorded as "Exception"
-// 5. A valid Javastack with message is present in the report
+// 5. A valid JavaScript stack with message is present in the report
 // 6. A valid native stack is present in the report
 
 const h = require('http')
